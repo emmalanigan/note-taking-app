@@ -1,4 +1,4 @@
-from app import note_taking_app
+
 
 import pytest
 from app import app
