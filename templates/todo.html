@@ -1,13 +1,15 @@
-<html lang="EN">
-    <head>
-        <title>To do list</title>
-    </head>
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="../static/index.css">
+            <title>To do list</title>
+        </head>
 
-    <body>
-        <h1>To do list</h1>
-        {% for to_do_item in to_do_items %}
-            <p>{{ to_do_item.date }}</p>
-            <p>{{ to_do_item.note }}</p>
-        {% endfor %}
-    </body>
-</html>
+        <body>
+            <h1>To do list</h1>
+            {% for to_do_item in to_do_items %}
+                <p>{{ to_do_item.date }}</p>
+                <p>{{ to_do_item.note }}</p>
+            {% endfor %}
+        </body>
+    </html>
