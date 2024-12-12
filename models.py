@@ -29,9 +29,12 @@ class NoteManager:
             return note
         return None
 
-    def remove_note(self, note_id):
-        note = self.notes[note_id]
-        self.notes.remove(note)
+    def delete_note(self, note_id):
+        note = self.get_note_by_id(note_id)
+        if note:
+            self.notes.remove(note)
+            return True
+        return False
 
     def get_all_notes(self):
         return self.notes

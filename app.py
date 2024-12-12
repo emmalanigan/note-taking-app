@@ -30,10 +30,10 @@ def edit_note(note_id):
 
 @app.route('/delete/<int:note_id>')
 def delete_note(note_id):
-    note_manager.remove_note(note_id)
+    note_manager.delete_note(note_id)
     return redirect(url_for('index'))
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
 
